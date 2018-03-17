@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    font-family: "Lato", sans-serif;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#content {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+.box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#currentproject {
+
+}
+
+#myprojects {
+	visibility: hidden;
+}
+
+#projecttiles {
+	width: 90%;
+	padding-top: 60px;
+	display: flex;
+	flex-direction: row;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.card {
+  width: 350px;
+margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
+
+.pagetitle {
+	text-align: center;
+	padding-top: 30px;
+	width: 100%;
+	display: flex;
+}
+.pagetitle span {
+	margin: auto 35%;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+#main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+#tab1, #tab2 {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
+.statussquare {
+	background-color: lightgreen;
+	margin: 5px;
+	flex-grow: 1;
+}	
+
+#statussquare-last {
+	visibility: hidden;
+}
+
+#progress {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+#progressbar {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	border: 1px solid lightgray;
+	margin: auto;
+	height: 100%;
+}
+
+.modulelabel {
+	border: 1px solid lightgray;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 50px;
+}
+
+.mainContent {
+	font-size: 120%;
+}

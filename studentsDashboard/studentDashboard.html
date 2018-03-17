@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<style>
+</style>
+<div id="mySidenav" class="sidenav">
+  <a href="#">Current Courses</a>
+  <a href="#">Past Courses</a>
+  <a href="#">Explore</a>
+</div>
+
+<div id="content">
+<!-- Hier fängt die Seite zu "allen" Projekten an.-->
+	<div id="myprojects" class="box">
+		<h2 class="pagetitle"><span>Meine Projekte</span></h2>	
+<!-- Die Cards mit den Projekten.-->
+		<div id="projecttiles">
+
+		<section class="card">
+  <img class="card-img" src="./yoga.jpg" alt="">
+  <div class="card-content">
+    <h1 class="card-title">Yoga course</h1>
+    <p class="card-text">The baddassiest yoga course in this world. By Isabelle</p>
+  </div>
+</section>
+<section class="card">
+  <img class="card-img" src="./africa.jpg" alt="">
+  <div class="card-content">
+    <h1 class="card-title">Agriculture for beginners</h1>
+    <p class="card-text">Teaching children how to plant and harvest seeds. For a better world! By Jeff.</p>
+  </div>
+</section>
+<section class="card">
+  <img class="card-img" src="./cooking.jpg" alt="">
+  <div class="card-content">
+    <h1 class="card-title">Simple cooking course</h1>
+    <p class="card-text">Because I'm passionate about cooking. By Sofi.</p>
+  </div>
+</section>
+	</div>
+</div>
+<!-- Das "aktuelle Projekt". -->
+	<div class="box" id="currentproject">
+		<h2 class="pagetitle"><span>Agriculture for beginners</span></h2>
+	<div id="progress">
+		<div id="progressbar">
+			<div class="statussquare"></div>
+			<div class="statussquare"></div>
+			<div class="statussquare" id="statussquare-last"></div>
+		</div>
+		<label>You have completed 2 out of 3 tasks.</label>
+	</div>
+<!-- Das eigentliche Zeug fängt hier an, hier beginnen nämlich die Tabs.-->
+		<div id="main">
+  
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Modules</label>
+    
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Submissions</label>
+    
+<!-- Content1 beezeichnet den Teil mit den zwei Knöpfen, mit denen man dsa "Video" und das Tutorial aufrufen kann.-->
+  <section id="content1">
+	<button class="modulelabel" data-toggle="modal" data-target="#module1Popup">
+	Module 1
+</button>
+	<button class="modulelabel" data-toggle="modal" data-target="#module2Popup">
+	Module 2
+</button>
+<!-- PopUp 1: Tutorial-->
+<div class="modal fade" id="module1Popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Module 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<div class="container-fluid">
+  <h1> Lesson 1: Soil and Water</h1>
+  <p class="mainContent"><br><b>1. The key to every plants health and garden's vitality is soil.</b></p>
+  <p class="mainContent"><b>2. Evaluate the soil </b>- a soil test gives you valuable analysis for your soil.</p>
+<p class="mainContent"><b>3. Improve your soil </b>- organic materials such as compost, rotted leaves and peat moss improves any soil.
+</p>
+<p class="mainContent"><b> 4. Types of Soil:</b></p>
+<p class="mainContent2">(i) Clay - Heavy, sticky clay holds water and is easily compacted.</p>
+<p class="mainContent2">(ii) Sand - Gritty sand drains quickly and doesn't hold nutrients.
+</p>
+<p class="mainContent2"> (iii) Cacti and succelent mix - equal parts sand, perlite, and potting soil. It provides the drainange that the plants need.
+	</p>
+	<p class="mainContent2">(iv) Silt - Crumbly silt is known to hold nutrients and moisture but it also packs it down.
+	</p>
+	<p class="mainContent2">
+		(v) All-Purpose Mix - A blend of peat moss, vermiculite, and composted bark. This soil works wonders for most plants. </p>
+    <p class="mainContent2"> (iv)Premium Mix - Jazz up potting soil by adding pertile, composted manure, vermiculite, and peat moss.</p>
+</div>
+
+<div class="container-fluid">	<br> <p class="mainContent"><b> 5. Remember!</b> - You need to prepare your garden before you plant. Losen the soil consistently however work on it only when it is damp and dry.
+		<br>
+	</p>
+	 <img src="https://i.ytimg.com/vi/Lrb_YZpEV1U/maxresdefault.jpg" alt="Flowers in Chania" width="300" height="200"> <br>
+<p class="mainContent"> <br><b>6. Plan out your garden </b>- roughly sketch out the scheme of your garden on a plain sheet of paper. Plan spots for each plant depending on their need of sunlight, shade, water and soil. <br>
+<b>7. Plant Types:</b> </p>
+<p class="mainContent2">(i) Annuals - Flowering or foliage only plants live colorfully for a single growing season.</p>
+<p class="mainContent2">(ii) Sand - These mainstrays fills beds with shape, color, texture and fragrances every year.
+</p>
+<p class="mainContent2"> (iii) Bulbs - Plant cold hardy bulbs in the fall for spring blooms in most regions.
+	</p>
+	<p class="mainContent2">(iv) Climbers/Vines - Annual or perennial, these versatile plants cover vertical space with foliage and flowers.
+	</p>
+	<p class="mainContent2">
+		(v) Shrubs - Flowering or overgreen shrubs work as accents or hedges and for seasonal interest.</p>
+		<p class="mainContent2"> (vi)Trees - With Large-scale form and beauty, trees add long lived shade and shelter.</p>
+		<p class="mainContent2"> (vii)Turgrass - Good Lawns include a blend of grass types that suit the climate conditions. <br> </p>
+<p class="mainContent"><b>8. Nourishing the soil</b> - Add chopped leaves, rotted manure, and compost in your soil. It helps the soil soak more water and retain more moisture.
+<p class="mainContent"><b> 9. Watering! </b>- Plants need water to survive and the amount of water may vary depending on weather, soil quality and the plants' type, age and size. deep thorough watering infrequently is better than a slight sprinkle every few days.A plants need for water can be determined by checking its soil for moisture. Just poke your finger into the soil and water only if it feels dry.<br> <br></p>
+
+<p class="mainContent"><b>Evaluation excersise:</b> Answer the following questions:
+	<br>
+	Q1: What determines the amount of water needed by a plant?<br>
+	Q2: How many plant types are there? Name <ins>three</ins> and describe them briefly.
+	<br> Q3: How would you prepare the soil for planting?</p>
+<p><br><i> *This lesson was compiled and drafted by Mark Benen and is part of the "Agricultural Course" of TETA.*</i>
+</p>
+
+
+</div>
+      </div>
+<!-- tbh hab ich hier schon komplett die Übersicht verloren, daher einige Kommentare; hier ist das "Video"-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="module2Popup" tabindex="-1" role="dialog" aria-labelledby="module1PopupTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Module 2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<img src="farming.jpeg" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+   	 
+<!-- Submissions-Page, enthält den File Upload-->
+  <section id="content2">
+<p>Please upload your last video for this course!</p>
+<div class="input-group mb-3">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputForSubmission">
+    <label class="custom-file-label" for="inputGroupFile02" id="labelForFileInput">Choose file</label>
+  </div>
+  <div class="input-group-append">
+    <span class="input-group-text" id="uploadSpan">Upload</span>
+  </div>
+</div>
+  </section>
+   
+</div>
+	</div>
+</div>
+<script type="text/javascript">
+	//Viel hässliches Gedönse. Dies ist dazu da, auf der Submissions-Seite den zugehörigen Dateinamen einzutragen.
+	var input = document.getElementById("inputForSubmission");
+		input.onchange = e => {
+			document.getElementById("labelForFileInput").innerHTML = input.value;
+		}
+</script> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
+</body>
+</html> 
+
+
