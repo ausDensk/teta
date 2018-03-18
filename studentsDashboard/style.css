@@ -10,11 +10,7 @@ body {
 }
 
 .sidenav {
-    height: 100%;
-    width: 250px;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    height: 100%; width: 250px; z-index: 1; top: 0; left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -55,11 +51,11 @@ body {
 }
 
 #currentproject {
-
+	visibility: hidden;
 }
 
 #myprojects {
-	visibility: hidden;
+
 }
 
 #projecttiles {
@@ -79,6 +75,10 @@ margin: auto;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
+}
+.card:hover {
+	box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+	cursor: pointer;
 }
 .card-img {
   border-radius: 5px 5px 0 0;
@@ -147,11 +147,10 @@ section {
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
 }
-
 #tab1, #tab2 {
+
   display: none;
 }
-
 label {
   display: inline-block;
   margin: 0 0 -1px;
@@ -161,32 +160,25 @@ label {
   color: #bbb;
   border: 1px solid transparent;
 }
-
 label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
 }
-
 label:hover {
   color: #888;
   cursor: pointer;
 }
-
 input:checked + label {
   color: #555;
   border: 1px solid #ddd;
   border-top: 2px solid orange;
   border-bottom: 1px solid #fff;
 }
-
 #tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab2:checked ~ #content2 {
   display: block;
 }
-
 @media screen and (max-width: 650px) {
   label {
     font-size: 0;
@@ -196,45 +188,43 @@ input:checked + label {
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 400px) {
   label {
     padding: 15px;
   }
 }
+#nobodyknows {
 
-.statussquare {
-	background-color: lightgreen;
-	margin: 5px;
-	flex-grow: 1;
-}	
-
-#statussquare-last {
-	visibility: hidden;
+	height: 20%;
+	margin-top: 100px;
+	width: 90%;
+	opacity: 0;
 }
 
 #progress {
-	height: 100px;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
+	padding-top: 60px;
 }
 
 #progressbar {
-	display: flex;
-	flex-direction: row;
 	width: 300px;
+	display: flex;
+	flex-direction: row;	
+	height: 100px;
+	margin: auto 35%;
 	border: 1px solid lightgray;
-	margin: auto;
-	height: 100%;
-}
+	border-radius: 3px;
+}	
 
-.modulelabel {
-	border: 1px solid lightgray;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	height: 50px;
-}
+.statussquare {
+	background-color: lightgreen;
+	margin: 3px;
+	flex-grow: 1;
+	}
 
-.mainContent {
-	font-size: 120%;
+#statussquare-last {
+	background-color: yellow;
+	visibility: hidden;
 }

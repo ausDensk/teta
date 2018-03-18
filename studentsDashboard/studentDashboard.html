@@ -5,10 +5,8 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-<style>
-</style>
 <div id="mySidenav" class="sidenav">
-  <a href="#">Current Courses</a>
+  <a href="#" onclick="redirectToOverview()">Current Courses</a>
   <a href="#">Past Courses</a>
   <a href="#">Explore</a>
 </div>
@@ -24,12 +22,12 @@
   <img class="card-img" src="./yoga.jpg" alt="">
   <div class="card-content">
     <h1 class="card-title">Yoga course</h1>
-    <p class="card-text">The baddassiest yoga course in this world. By Isabelle</p>
+    <p class="card-text">The baddassiest yoga course in this world. By Isabelle.</p>
   </div>
 </section>
 <section class="card">
   <img class="card-img" src="./africa.jpg" alt="">
-  <div class="card-content">
+  <div class="card-content" onclick="redirectToCourse()">
     <h1 class="card-title">Agriculture for beginners</h1>
     <p class="card-text">Teaching children how to plant and harvest seeds. For a better world! By Jeff.</p>
   </div>
@@ -42,6 +40,7 @@
   </div>
 </section>
 	</div>
+<div id="nobodyknows" data-toggle="modal" data-target="#congratsmodal" onclick="colorLastTileGreen()"></div>
 </div>
 <!-- Das "aktuelle Projekt". -->
 	<div class="box" id="currentproject">
@@ -167,8 +166,8 @@
     <input type="file" class="custom-file-input" id="inputForSubmission">
     <label class="custom-file-label" for="inputGroupFile02" id="labelForFileInput">Choose file</label>
   </div>
-  <div class="input-group-append">
-    <span class="input-group-text" id="uploadSpan">Upload</span>
+  <div style="-moz-appearance: none;" data-toggle="modal" data-target="#okmodal" class="input-group-append" onclick="upload()">
+    <span class="input-group-text">Upload</span>
   </div>
 </div>
   </section>
@@ -176,17 +175,49 @@
 </div>
 	</div>
 </div>
-<script type="text/javascript">
-	//Viel hässliches Gedönse. Dies ist dazu da, auf der Submissions-Seite den zugehörigen Dateinamen einzutragen.
-	var input = document.getElementById("inputForSubmission");
-		input.onchange = e => {
-			document.getElementById("labelForFileInput").innerHTML = input.value;
-		}
-</script> 
+<!-- Ein weiterer Dialog, diesmal zum anzeigen, dass die Submission gesendet wurde.-->
+<div class="modal fade" id="okmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Thank you!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        We received your message and it will now be evaluated by your teacher!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hoffentlich das letzte PopUp, zum Bestehen des Kurses.-->
+<div class="modal fade" id="congratsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		You have passed the course "Agriculture for beginners! Your reward will be shipped to you soon!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Awesome!</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
+<script type="text/javascript" src="changingstuff.js"></script> 
 </body>
 </html> 
 
-
+ 
