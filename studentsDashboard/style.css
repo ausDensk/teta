@@ -16,6 +16,33 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
+/*what i added*/
+.colorr
+{
+  background-image: url("../background.png");
+}
+.gradient
+{
+  background-color: linear-gradient(to bottom,rgb(255,0,0) 0%, white 90%);
+}
+.white
+{
+  background-color:white;
+}
+.nameSign
+{
+  text-align: right;
+}
+.italic
+{
+  font-style: italic;
+}
+.underline
+{
+  text-decoration: underline;
+}
+/*jeremy*/
+
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
